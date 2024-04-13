@@ -1,0 +1,120 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    font-family: 'Verdana', 'Arial', sans-serif;
+    background-color: #FF6F61; 
+    margin: 0;
+}
+
+#wrapper {
+    background-color: #E6E6FA; 
+    padding: 10px;
+}
+
+header {
+    color: white;
+    background-color: #9370DB; 
+    background-image: url(images/RoyalLePage.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 0;
+    text-align: center;
+    position: relative;
+    top: 0;
+    margin: 0;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    display: block;
+    list-style-type: none;
+    padding: 0;
+    background-color: #8A2BE2; 
+    text-align: center;
+}
+
+nav li {
+    display: inline;
+    padding: 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+main {
+    background-color: #FFFFFF;
+    color: #000000;
+    padding: 20px;
+}
+
+h2 {
+    color: #9370DB; 
+    margin-bottom: 20px;
+}
+
+p {
+    margin-bottom: 1em;
+}
+
+blockquote {
+    margin: 2%;
+    border-left: 3px solid #9370DB;
+    padding-left: 10px;
+}
+
+aside {
+    text-align: center;
+    padding: 20px;
+}
+
+figure img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+footer {
+    background-color: #9370DB; 
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+@media (min-width: 600px) {
+    nav ul {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media (min-width: 1024px) {
+    #wrapper {
+        display: grid;
+        grid-template-columns: 1fr 3fr 1fr;
+        grid-gap: 20px;
+		
+    }
+
+    main {
+        grid-column: 2 / 3;
+    }
+
+    aside {
+        grid-column: 3 / 4;
+		float: left;
+		margin-right: 20px;
+   
+    }
+}
